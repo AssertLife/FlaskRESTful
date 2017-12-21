@@ -21,7 +21,7 @@ def get_computer_info():
 
 @app.route('/')
 def index():
-    return "Hello there, you've reached {}'s Computer:)".format(os.getenv('USERNAME'))
+    return "Hello there, you've reached {}'s Computer:)".format(getpass.getuser())
 
 @app.route('/computer_info')
 def computerinfo():
